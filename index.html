@@ -1,0 +1,63 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TaskOS App</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">      
+        <link type="text/css" href="css/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+        <script type="text/javascript" src="js/jHint.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </head>
+
+    <body>
+        <div class="content">
+            <!-- The activator click on the activator to display task list form-->
+            <a class="activator" id="activator"></a>
+        </div>
+
+        <div class="overlay" id="overlay" style="display:none;"></div>
+        
+        <div class="box" id="box">
+            <a class="boxclose" id="boxclose"></a>
+            <h1>taskos</h1>
+            <h5>- a tasklist todo app -</h5>
+            <br />
+            <div class ="formpart">
+                <input type="text" id ="taskName" name="TaskName" title="What needs to be done" value=""/><br/><br/>
+                <input type="text" id= "assignee" name="Assignee" title="By Whom" value=""/>
+                <input type="text" id="date_input" name="Deadline" title="By When" value=""/><br/><br/>
+                <input type="submit" value="save" id="check" onclick="check()" />
+            </div>
+            <br />
+            <div class="txtbreak">
+                <ul type="1" id = "resbody">
+                    Please fill the task details in the text fields above
+                </ul>
+
+            </div>
+        </div> 
+        <script type="text/javascript">
+            $(function() {
+                $('#activator').click(function(){
+                    $('#overlay').fadeIn('fast',function(){
+                        $('#box').animate({'top':'160px'},500);
+                    });
+                });
+                $('#boxclose').click(function(){
+                    $('#box').animate({'top':'-250px'},500,function(){
+                        $('#overlay').fadeOut('fast');
+                    });
+                });
+        
+
+            });
+        </script>
+    </body>
+</html>

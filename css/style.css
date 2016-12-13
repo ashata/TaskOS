@@ -1,0 +1,82 @@
+/*date picker size of calendar*/
+div.ui-datepicker{
+    font-size:10px;
+}
+
+/*unordered list without bullets*/
+ul
+{
+    list-style-type: none;
+}
+
+/*body background and font styles*/
+body{ font: 80.5% "Trebuchet MS", sans-serif; 
+      margin: 50px;
+      background:transparent url(../images/tasklist.jpg);
+      height:2000px;
+}
+
+/*if a list item is selected, change it's color'*/
+.selected {
+    background-color:#EF7777;   
+}
+
+/*overlay and shadow classes begin*/
+a.activator{
+    width:153px;
+    height:150px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background:#fff url(../images/clickme.png) no-repeat top left;
+    z-index:1;
+    cursor:pointer;
+}
+
+.overlay{
+    background:transparent url(../images/overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+.box{
+    position:fixed;
+    top:-250px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #ccc;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+}
+a.boxclose{
+    float:right;
+    width:26px;
+    height:26px;
+    background:transparent url(../images/cancel.png) repeat top left;
+    margin-top:-30px;
+    margin-right:-30px;
+    cursor:pointer;
+}
+.box h1{
+    border-bottom: 1px dashed #7F7F7F;
+    margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color:#FFEFEF;
+    color:#EF7777;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -khtml-border-top-left-radius: 20px;
+    -khtml-border-top-right-radius: 20px;
+}
+/*overlay and shadow classes end*/

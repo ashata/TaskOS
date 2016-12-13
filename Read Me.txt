@@ -1,0 +1,25 @@
+#TaskOS App Info
+	Enter all fields to save the task. Error message displayed if a field is empty
+	Task deadline cannot be a date before current date
+	Double click on list item to change color/style
+	Click on remove image to delete a task
+	
+#Revision 1.1
+	removed ajax functions (xmlhttprequests)
+	event handling in jquery (instead of javascript)
+	bug fixed- remove item now works in Firefox
+	bug fixed - tasks with same name can be deleted
+
+# All of the functions are tested on Chrome, Safari, Firefox and ie9 - everything works in Chrome (v18.x), Firefox(v11.x) and Safari(v3.x)
+	
+#Bug List (and future work)
+	Doesnot work in ie - needs ie specific changes to both css and jquery (datepicker and other ui elements)
+	
+#Resources used (04/14/2012)
+		http://www.w3schools.com/
+		http://jquery.com/
+		http://jqueryui.com/
+		http://www.dynamicdrive.com/
+		http://jsfiddle.net/3s2pk/
+		and more
+		
